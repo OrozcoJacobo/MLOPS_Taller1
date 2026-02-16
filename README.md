@@ -53,7 +53,7 @@ El entrenamiento se realiza en el notebook `entrenamiento_pinguinos.ipynb`.
 Etapas principales:
 
 1. Carga de datos
-2. Separación en variables X y y
+2. Separación en variables X y Y
 3. División en entrenamiento y validación
 4. Definición de pipelines:
    - Imputación para variables numéricas
