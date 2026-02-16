@@ -239,7 +239,7 @@ docker logs -f penguins-api
 
 ---
 
-### Prueba de predicción desde consola
+### Prueba de predicción desde consola usando modelo por defecto RF
 
 ```bash
 curl -X POST "http://localhost:8989/predict" \
@@ -259,6 +259,10 @@ curl -X POST "http://localhost:8989/predict" \
 
 ---
 
+### BONO
+
+---
+
 ### Prueba de obtención de lista de modelos disponibles
 
 ![Texto Alternativo](images/getmodels.png)
@@ -271,7 +275,7 @@ curl -X POST "http://localhost:8989/predict" \
 
 ---
 
-### Prueba de predicción svm
+### Prueba de predicción usando modelo SVM
 
 ![Texto Alternativo](images/predictionsvm.png)
 
