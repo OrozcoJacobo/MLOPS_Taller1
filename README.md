@@ -100,23 +100,23 @@ Recibe las características de un pingüino y retorna la predicción.
 ```bash
 pip install -r requirements.txt
 ```
-![Texto Alternativo]('/images/menv.png')
+![Texto Alternativo](/images/menv.png)
 
 3. Ejecutar la API:
 
 ```bash
 uvicorn main:app --reload --port 8989
 ```
-![Texto Alternativo]('/images/apiup.png')
+![Texto Alternativo](/images/apiup.png)
 
 4. Abrir en navegador:
 
 ```
 http://127.0.0.1:8989/docs
 ```
-![Texto Alternativo]('/images/api.png')
+![Texto Alternativo](/images/api.png)
 
-![Texto Alternativo]('/images/getmodels.png')
+![Texto Alternativo](/images/getmodels.png)
 
 ---
 
