@@ -129,18 +129,22 @@ Desde la raíz del proyecto:
 ```bash
 docker build -t penguins-api .
 ```
+![Texto Alternativo](images/docker.png)
 
 ### 2. Ejecutar el contenedor
 
 ```bash
 docker run -p 8989:8989 penguins-api
 ```
+![Texto Alternativo](images/dockerup.png)
 
 ### 3. Acceder a la API
 
 ```
 http://localhost:8989/docs
 ```
+
+![Texto Alternativo](images/apidocker.png)
 
 ---
 
