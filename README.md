@@ -165,9 +165,9 @@ http://localhost:8989/docs
 
 ---
 
-## Docker – Detalles de Containerización
+## Docker – Detalles de Contenerización
 
-Durante este taller se agregó containerización completa de la API para garantizar reproducibilidad y portabilidad del servicio.
+Durante este taller se agregó contenerización completa de la API para garantizar reproducibilidad y portabilidad del servicio.
 
 ### Configuración del Dockerfile
 
@@ -267,11 +267,11 @@ curl -X POST "http://localhost:8989/predict" \
   "year": 2007
 }'
 
-![Texto Alternativo](images/dockerbk.png)
+![Texto Alternativo](images/predicción.png)
 
 ---
 
-La containerización permite ejecutar la API en cualquier entorno sin depender de la configuración local del sistema.
+La contenerización permite ejecutar la API en cualquier entorno sin depender de la configuración local del sistema.
 
 
 ## Notas
