@@ -235,6 +235,8 @@ docker ps
 docker logs -f penguins-api
 ```
 
+![Texto Alternativo](images/dockerlog.png)
+
 ---
 
 ### Prueba de predicción desde consola
@@ -252,6 +254,20 @@ curl -X POST "http://localhost:8989/predict" \
   "year": 2007
 }'
 ```
+
+curl -X POST "http://localhost:8989/predict" \
+-H "Content-Type: application/json" \
+-d '{
+  "island": "Torgersen",
+  "bill_length_mm": 39.1,
+  "bill_depth_mm": 18.7,
+  "flipper_length_mm": 181,
+  "body_mass_g": 3750,
+  "sex": "male",
+  "year": 2007
+}'
+
+![Texto Alternativo](images/dockerbk.png)
 
 ---
 
