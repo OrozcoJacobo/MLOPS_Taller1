@@ -225,6 +225,8 @@ docker run -d --name penguins-api -p 8989:8989 penguins-api
 docker ps
 ```
 
+![Texto Alternativo](images/dockerbk.png)
+
 ---
 
 ### Ver logs del servicio
