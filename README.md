@@ -259,6 +259,24 @@ curl -X POST "http://localhost:8989/predict" \
 
 ---
 
+### Prueba de obtención de lista de modelos disponibles
+
+![Texto Alternativo](images/getmodels.png)
+
+---
+
+### Prueba de selección del modelo SVM
+
+![Texto Alternativo](images/selectsvm.png)
+
+---
+
+### Prueba de predicción svm
+
+![Texto Alternativo](images/predictionsvm.png)
+
+---
+
 La contenerización permite ejecutar la API en cualquier entorno sin depender de la configuración local del sistema.
 
 
