@@ -138,6 +138,8 @@ docker run -p 8989:8989 penguins-api
 ```
 ![Texto Alternativo](images/dockerup.png)
 
+![Texto Alternativo](images/dockerup2.png)
+
 ### 3. Acceder a la API
 
 ```
