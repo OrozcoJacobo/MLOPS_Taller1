@@ -267,7 +267,7 @@ curl -X POST "http://localhost:8989/predict" \
   "year": 2007
 }'
 
-![Texto Alternativo](images/predicción.png)
+![Texto Alternativo](images/prediction.png)
 
 ---
 
