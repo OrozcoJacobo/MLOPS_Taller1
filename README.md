@@ -1,8 +1,8 @@
 # Penguins Species Classification API – MLOps Taller 1
 
 # Presentado Por
-Jacobo Orozco Ardila
-Javier Chaparro
+- Jacobo Orozco Ardila
+- Javier Chaparro
 
 ## Descripción
 
