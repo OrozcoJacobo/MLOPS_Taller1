@@ -1,8 +1,8 @@
 # Penguins Species Classification API – MLOps Taller 1
 
 # Presentado Por
-Jacobo Orozco Ardila
-Javier Chaparro
+- Jacobo Orozco Ardila
+- Javier Chaparro
 
 ## Descripción
 
@@ -53,7 +53,7 @@ El entrenamiento se realiza en el notebook `entrenamiento_pinguinos.ipynb`.
 Etapas principales:
 
 1. Carga de datos
-2. Separación en variables X y y
+2. Separación en variables X y Y
 3. División en entrenamiento y validación
 4. Definición de pipelines:
    - Imputación para variables numéricas
@@ -100,18 +100,23 @@ Recibe las características de un pingüino y retorna la predicción.
 ```bash
 pip install -r requirements.txt
 ```
+![Texto Alternativo](images/menv.png)
 
 3. Ejecutar la API:
 
 ```bash
 uvicorn main:app --reload --port 8989
 ```
+![Texto Alternativo](images/apiup.png)
 
 4. Abrir en navegador:
 
 ```
 http://127.0.0.1:8989/docs
 ```
+![Texto Alternativo](images/api.png)
+
+![Texto Alternativo](images/getmodels.png)
 
 ---
 
@@ -124,18 +129,24 @@ Desde la raíz del proyecto:
 ```bash
 docker build -t penguins-api .
 ```
+![Texto Alternativo](images/docker.png)
 
 ### 2. Ejecutar el contenedor
 
 ```bash
 docker run -p 8989:8989 penguins-api
 ```
+![Texto Alternativo](images/dockerup.png)
+
+![Texto Alternativo](images/dockerup2.png)
 
 ### 3. Acceder a la API
 
 ```
 http://localhost:8989/docs
 ```
+
+![Texto Alternativo](images/apidocker.png)
 
 ---
 
@@ -154,9 +165,9 @@ http://localhost:8989/docs
 
 ---
 
-## Docker – Detalles de Containerización
+## Docker – Detalles de Contenerización
 
-Durante este taller se agregó containerización completa de la API para garantizar reproducibilidad y portabilidad del servicio.
+Durante este taller se agregó contenerización completa de la API para garantizar reproducibilidad y portabilidad del servicio.
 
 ### Configuración del Dockerfile
 
@@ -214,6 +225,8 @@ docker run -d --name penguins-api -p 8989:8989 penguins-api
 docker ps
 ```
 
+![Texto Alternativo](images/dockerbk.png)
+
 ---
 
 ### Ver logs del servicio
@@ -222,9 +235,11 @@ docker ps
 docker logs -f penguins-api
 ```
 
+![Texto Alternativo](images/dockerlog.png)
+
 ---
 
-### Prueba de predicción desde consola
+### Prueba de predicción desde consola usando modelo por defecto RF
 
 ```bash
 curl -X POST "http://localhost:8989/predict" \
@@ -240,9 +255,33 @@ curl -X POST "http://localhost:8989/predict" \
 }'
 ```
 
+![Texto Alternativo](images/prediction.png)
+
 ---
 
-La containerización permite ejecutar la API en cualquier entorno sin depender de la configuración local del sistema.
+### BONO
+
+---
+
+### Prueba de obtención de lista de modelos disponibles
+
+![Texto Alternativo](images/getmodels.png)
+
+---
+
+### Prueba de selección del modelo SVM
+
+![Texto Alternativo](images/selectsvm.png)
+
+---
+
+### Prueba de predicción usando modelo SVM
+
+![Texto Alternativo](images/predictionsvm.png)
+
+---
+
+La contenerización permite ejecutar la API en cualquier entorno sin depender de la configuración local del sistema.
 
 
 ## Notas
